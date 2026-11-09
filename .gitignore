@@ -1,0 +1,33 @@
+# ---- competition data: never commit (rules section 2.4.b) ----
+data/
+*.dcm
+train.csv
+test.csv
+train_series.csv
+test_series.csv
+sample_submission.csv
+
+# ---- derived from competition data: also never commit ----
+pseudo_labels*.csv
+gold58.csv
+laterality.csv
+raw14_*.csv
+raw14_*.txt
+oof*.csv
+submission.csv
+
+# ---- large artefacts ----
+*.npy
+*.pt
+*.pth
+*.bin
+*.safetensors
+cache*/
+
+# ---- python ----
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.DS_Store
